@@ -1,0 +1,13 @@
+package com.system.vacation.dao;
+
+import com.system.vacation.domain.VacationRequests;
+import com.system.vacation.to.VacationSystemTO;
+
+public class VacationDaoHelper {
+	
+	public VacationSystemTO populateDomainToTO(VacationRequests vacationRequests){
+		return ;
+		
+	}
+
+}

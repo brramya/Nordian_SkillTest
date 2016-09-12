@@ -1,0 +1,65 @@
+<html>
+<head></head>
+	<body>
+	<h3>Manager Approval/Denial Screen</h3>
+
+	<form action="//submit.form" id="ManagerScreen" method="post">
+		<table border="0" cellpadding="5" cellspacing="0">
+			<tr> <td style="width: 20%">
+			<div class="row">
+			<label for="Manager_Id"><b>Manager Id :</b></label><br />
+			<input name="Manager_Id" type="text" value="11152" maxlength="10" />
+			</div>
+			</div>
+			</td> <td style="width: 15%">
+			</td> </tr> <tr> <td colspan="2" style="text-align: left;">
+			<input name="submit" type="submit" value="Submit" />
+			</td></tr>
+			</table>
+			<br><br><br>
+			
+<style>
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+th, td {
+    padding: 5px;
+    text-align: left;
+}
+</style>
+	
+<table style="width:100%">
+  <caption>Manager Approval/Denial Screen</caption>
+  <tr>
+    <th>Employee Id</th>
+    <th>VactionDaysRemaining</th>
+    <th>VactionDaysUsed</th>
+    <th>SickDaysRemaining</th>
+    <th>SickDaysUsed</th>
+    <th>Approval </th> 
+    <th>Denial</th> 
+  </tr>
+  <tr>
+    <td>00129</td>
+    <td>9 Out of 10</td>
+    <td>1 Out of 10</td>
+    <td>4 Out of 5</td>
+    <td>1 Out of 5</td>
+    <td><input type="checkbox" name="Approval">Approval</td>
+    <td><input type="checkbox" name="Denial" value="Denial">Denial</td>
+  </tr>
+    <tr>
+    <td>00130</td>
+    <td>7 Out of 10</td>
+    <td>3 Out of 10</td>
+    <td>2 Out of 5</td>
+    <td>3 Out of 5</td>
+    <td><input type="checkbox" name="Approval">Approval</td>
+    <td><input type="checkbox" name="Denial" value="Denial">Denial</td>
+  </tr>
+			
+</table>
+</form>
+</body>
+</html>

@@ -1,0 +1,30 @@
+package com.system.vacation;
+
+import com.system.vacation.service.IVacationService;
+
+public class EmployeeVacationAction {
+	
+	private IVacationService vacationService;
+	
+	public void getMyVacationDetails(){
+		
+	}
+	
+	public void createOrUpdateVacation(){
+		
+	}
+	
+	public void cancelVacation(){
+		
+	}
+
+	public IVacationService getVacationService() {
+		return vacationService;
+	}
+
+	public void setVacationService(IVacationService vacationService) {
+		this.vacationService = vacationService;
+	}
+	
+	
+}

@@ -1,0 +1,14 @@
+package com.system.vacation.service;
+
+public interface IVacationService {
+	
+	public void retrieveVacationDetails();
+	
+	public void createOrUpdateVacation();
+	
+	public void cancelVacation();
+	
+	public void approveVacation();
+	
+	public void rejectVacation();
+}

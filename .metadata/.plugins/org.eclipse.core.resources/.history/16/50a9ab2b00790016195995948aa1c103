@@ -1,0 +1,5 @@
+package com.system.vacation.domain;
+
+public class VacationRequests {
+
+}

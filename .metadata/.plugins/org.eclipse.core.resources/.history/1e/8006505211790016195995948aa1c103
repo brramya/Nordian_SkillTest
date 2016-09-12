@@ -1,0 +1,17 @@
+package com.system.vacation.dao;
+
+import com.system.vacation.to.VacationSystemTO;
+
+public interface IVacationDao {
+	
+	public void retrieveVacationDetails(VacationSystemTO vacationSystemTO);
+	
+	public void createOrUpdateVacation();
+	
+	public void cancelVacation();
+	
+	public void approveVacation();
+	
+	public void rejectVacation();
+	
+}

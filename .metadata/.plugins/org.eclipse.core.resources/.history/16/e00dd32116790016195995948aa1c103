@@ -1,0 +1,48 @@
+package com.system.vacation.service;
+
+import com.system.vacation.dao.IVacationDao;
+import com.system.vacation.to.VacationSystemTO;
+
+public class VactionServiceImpl implements IVacationService {
+	
+	private IVacationDao vacationDao;
+
+	@Override
+	public void retrieveVacationDetails(VacationSystemTO vacationSystemTO) {
+		vacationDao.retrieveVacationDetails(vacationSystemTO);
+	}
+
+	@Override
+	public void createOrUpdateVacation(VacationSystemTO vacationSystemTO) {
+		vacationDao.createOrUpdateVacation(vacationSystemTO);
+	}
+
+	@Override
+	public void cancelVacation(VacationSystemTO vacationSystemTO) {
+		vacationDao.cancelVacation(vacationSystemTO);
+	}
+
+	@Override
+	public void retrievePendingVacationRequests(VacationSystemTO vacationSystemTO) {
+		vacationDao.retrievePendingVacationRequests(vacationSystemTO);
+	}
+
+	@Override
+	public void approveVacation(VacationSystemTO vacationSystemTO) {
+		vacationDao.approveVacation(vacationSystemTO);
+	}
+
+	@Override
+	public void rejectVacation(VacationSystemTO vacationSystemTO) {
+		vacationDao.rejectVacation(vacationSystemTO);
+	}
+
+	public IVacationDao getVacationDao() {
+		return vacationDao;
+	}
+
+	public void setVacationDao(IVacationDao vacationDao) {
+		this.vacationDao = vacationDao;
+	}
+
+}

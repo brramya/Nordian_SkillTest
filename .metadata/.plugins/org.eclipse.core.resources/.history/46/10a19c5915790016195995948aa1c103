@@ -1,0 +1,50 @@
+package com.system.vacation.dao;
+
+import com.system.vacation.domain.VacationRequests;
+import com.system.vacation.to.VacationSystemTO;
+
+public class VacationDaoImpl implements IVacationDao {
+	
+	private VacationDaoHelper daoHelper;
+
+	@Override
+	public VacationSystemTO retrieveVacationDetails(VacationSystemTO vacationSystemTO) {
+		// Get Vacation Info Domain object from DB- convert to TO with retrieved Info.
+		return daoHelper.populateDomainToTO(new VacationRequests());
+	}
+
+	@Override
+	public VacationSystemTO createOrUpdateVacation(VacationSystemTO vacationSystemTO) {
+		VacationRequests requests = daoHelper.populateTOtoDomain(vacationSystemTO);
+		return daoHelper.populateDomainToTO(requests);
+	}
+
+	@Override
+	public VacationSystemTO cancelVacation(VacationSystemTO vacationSystemTO) {
+
+	}
+
+	@Override
+	public VacationSystemTO approveVacation(VacationSystemTO vacationSystemTO) {
+
+	}
+
+	@Override
+	public VacationSystemTO rejectVacation(VacationSystemTO vacationSystemTO) {
+
+	}
+
+	@Override
+	public void retrievePendingVacationRequests(VacationSystemTO vacationSystemTO) {
+
+	}
+
+	public VacationDaoHelper getDaoHelper() {
+		return daoHelper;
+	}
+
+	public void setDaoHelper(VacationDaoHelper daoHelper) {
+		this.daoHelper = daoHelper;
+	}
+
+}

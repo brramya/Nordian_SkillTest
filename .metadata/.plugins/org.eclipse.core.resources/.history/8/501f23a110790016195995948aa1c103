@@ -1,0 +1,33 @@
+package com.system.vacation;
+
+public class ManagerVacationAction extends VacationCommonAction {
+	
+	public void retrievePendingRequests(){
+		validateManagerData();
+		getVacationService().retrievePendingVacationRequests(getVacationSystemTO());
+	}
+
+	public void approveVacation(){
+		try {
+			getVacationService().approveVacation(getVacationSystemTO());
+			System.out.println("Vacation Reqests Approved");
+		} catch (Exception e) {
+			System.out.println("System service error");
+			e.printStackTrace();
+		}
+	}
+	
+	public void rejectVacation(){
+		try {
+			getVacationService().rejectVacation(getVacationSystemTO());
+			System.out.println("Vacation Reqests Rejected");
+		} catch (Exception e) {
+			System.out.println("System service error");
+			e.printStackTrace();
+		}
+	}
+	
+	private void validateManagerData() {
+		// TODO Auto-generated method stub
+	}
+}

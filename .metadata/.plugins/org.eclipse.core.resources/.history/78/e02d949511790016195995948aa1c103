@@ -1,0 +1,43 @@
+package com.system.vacation.dao;
+
+import com.system.vacation.to.VacationSystemTO;
+
+public class VacationDaoImpl implements IVacationDao {
+
+	@Override
+	public void retrieveVacationDetails(VacationSystemTO vacationSystemTO) {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public void createOrUpdateVacation(VacationSystemTO vacationSystemTO) {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public void cancelVacation(VacationSystemTO vacationSystemTO) {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public void approveVacation(VacationSystemTO vacationSystemTO) {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public void rejectVacation(VacationSystemTO vacationSystemTO) {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public void retrievePendingVacationRequests(VacationSystemTO vacationSystemTO) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

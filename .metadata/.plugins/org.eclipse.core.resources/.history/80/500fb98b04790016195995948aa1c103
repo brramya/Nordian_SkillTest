@@ -1,0 +1,21 @@
+package com.system.vacation;
+
+public class ManagerVacationAction extends VacationCommonAction {
+	
+	public void retrievePendingRequests(){
+		validateManagerData();
+		getVacationService().retrievePendingVacationRequests(getVacationSystemTO());
+	}
+
+	public void approveVacation(){
+		
+	}
+	
+	public void rejectVacation(){
+		
+	}
+	
+	private void validateManagerData() {
+		// TODO Auto-generated method stub
+	}
+}

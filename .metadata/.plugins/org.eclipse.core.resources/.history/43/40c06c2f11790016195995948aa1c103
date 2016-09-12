@@ -1,0 +1,15 @@
+package com.system.vacation.dao;
+
+public interface IVacationDao {
+	
+	public void retrieveVacationDetails();
+	
+	public void createOrUpdateVacation();
+	
+	public void cancelVacation();
+	
+	public void approveVacation();
+	
+	public void rejectVacation();
+	
+}

@@ -1,0 +1,16 @@
+package com.system.vacation.service;
+
+import com.system.vacation.to.VacationSystemTO;
+
+public interface IVacationService {
+	
+	public void retrieveVacationDetails(VacationSystemTO vacationSystemTO);
+	
+	public void createOrUpdateVacation(VacationSystemTO vacationSystemTO);
+	
+	public void cancelVacation(VacationSystemTO vacationSystemTO);
+	
+	public void approveVacation();
+	
+	public void rejectVacation();
+}

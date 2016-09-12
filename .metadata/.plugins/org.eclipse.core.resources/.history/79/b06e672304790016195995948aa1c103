@@ -1,0 +1,16 @@
+package com.system.vacation;
+
+public class ManagerVacationAction {
+	
+	public void retrievePendingRequests(){
+		
+	}
+	
+	public void approveVacation(){
+		
+	}
+	
+	public void rejectVacation(){
+		
+	}
+}

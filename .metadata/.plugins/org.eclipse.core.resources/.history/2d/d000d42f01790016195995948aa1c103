@@ -1,0 +1,18 @@
+package com.system.vacation;
+
+public class EmployeeVacationAction {
+	
+	public void getMyVacationDetails(){
+		
+	}
+	
+	public void createOrUpdateVacation(){
+		
+	}
+	
+	public void cancelVacation(){
+		
+	}
+	
+	
+}

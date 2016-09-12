@@ -1,0 +1,51 @@
+package com.system.vacation;
+
+public class EmployeeVacationAction extends VacationCommonAction {
+	
+
+	
+	/**
+	 * Retrieves detailed vacation info for the employee 
+	 */
+	public void getMyVacationDetails(){
+		validateEmployeeData();
+		getVacationService().retrieveVacationDetails(getVacationSystemTO());
+	}
+	
+	/**
+	 * creates a new leave request or updates an existing request
+	 */
+	public void createOrUpdateVacation(){
+		try {
+			getVacationService().createOrUpdateVacation(getVacationSystemTO());
+			System.out.println("Leave Request Submitted for Manager Approval");
+		} catch (Exception e) {
+			System.out.println("Leave Request Submission Failed");
+			e.printStackTrace();
+		}
+	}
+	
+	/**
+	 * cancels and existing leave request
+	 */
+	public void cancelVacation(){
+		try {
+			getVacationService().cancelVacation(getVacationSystemTO());
+			System.out.println("Leave Request Cancelled");
+		} catch (Exception e) {
+			System.out.println("Cannot cancel leave Request");
+			e.printStackTrace();
+		}
+	}
+	
+	/**
+	 * Perform any UI Validations on employee leave request screen
+	 */
+	private void validateEmployeeData() {
+		// perform any UI Validations
+	}
+
+	
+	
+	
+}
